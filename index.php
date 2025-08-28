@@ -5,8 +5,12 @@
     <meta http-equiv='X-UA-Compatible' content='IE=edge'>
     <title>Calculadora Simples</title>
     <meta name='viewport' content='width=device-width, initial-scale=1'>
-    <link rel='stylesheet' type='text/css' media='screen' href='main.css'>
-    <script src='main.js'></script>
+    <style>
+        body {
+            background-color: green; /* fundo verde maconha */
+            text-align: center;       /* centraliza conteúdo */
+        }
+    </style>
 </head>
 <body>
 
@@ -17,11 +21,12 @@
         <label for="num2">Num2: </label>
         <input type="text" name="num2">
 
-        <input type="submit"> <input type="reset" value="reset">
+        <br><br>
+        <input type="submit" value="Calcular"> 
+        <input type="reset" value="Resetar">
     </form>
 
     <?php
-
         //Variáveis
         $num1 = 0;
         $num2 = 0;
@@ -36,10 +41,8 @@
             $total = $num1 + $num2;
 
             //Saída
-            echo "<br> <br> <br>";
-            echo "<h2>" .$num1. " + " .$num2. " = " .$total. "</h2>";
+            echo "<br><br><h2>" .$num1. " + " .$num2. " = " .$total. "</h2>";
         }
-
     ?>
     
 </body>
